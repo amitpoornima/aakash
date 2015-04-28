@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Send_Msg"
+    android:background="@drawable/pp" >
+
+    <EditText
+        android:id="@+id/msgtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="93dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone" 
+        android:hint="Enter Mobile No."
+        />
+
+    <Button
+        android:id="@+id/sendmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/msgtxt"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="56dp"
+        android:text="SEND" />
+
+</RelativeLayout>

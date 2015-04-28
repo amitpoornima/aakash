@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/pp"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.72" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"         
+        >
+        
+		<Button
+            android:id="@+id/H_expence"
+            android:layout_width="90dp"
+            android:layout_height="90dp"                        
+            android:gravity="bottom"
+            android:text="@string/expence"
+            android:textSize="15sp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"            
+            android:textStyle="bold"            
+             />
+		
+        <Button
+            android:id="@+id/H_income"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignTop="@id/H_expence"
+            android:layout_toRightOf="@id/H_expence"
+            android:layout_marginLeft="40dp"
+            android:gravity="bottom"
+            android:text="@string/income"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/H_category"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@id/H_expence"
+            android:layout_below="@id/H_expence"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="@string/category"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/H_view_expence"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@id/H_income"
+            android:layout_alignTop="@id/H_category"
+            android:gravity="bottom"
+            android:text="@string/view"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+          <Button
+            android:id="@+id/H_view_expence1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+             android:layout_alignLeft="@id/H_category"
+            android:layout_below="@id/H_category"
+            android:gravity="bottom"
+            android:text="@string/borrow"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+           <Button
+            android:id="@+id/H_view_expence12"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@id/H_view_expence"
+            android:layout_alignTop="@id/H_view_expence1"
+            android:gravity="bottom"
+            android:text="@string/Msg"
+            android:textSize="15sp"
+            android:textStyle="bold" />         
+
+    </RelativeLayout>         
+    	
+</LinearLayout>

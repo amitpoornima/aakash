@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ViewSingleExpenseActivity"
+    android:background="@drawable/pp" >
+    
+    <ImageView
+        android:id="@+id/view_expense_image1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/select" />
+    
+    <EditText 
+        android:id="@+id/view_expense_edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:hint="Select Category"        
+        android:focusable="false"
+        android:layout_toRightOf="@id/view_expense_image1"
+        />
+
+    <TextView
+        android:id="@+id/view_expense_text1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/view_expense_image1"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@id/view_expense_edit1"
+        android:gravity="center"
+        android:textSize="25sp" />
+    
+    <EditText 
+        android:id="@+id/view_expense_edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:hint="Enter Amount"
+        android:focusable="false"
+        android:layout_toRightOf="@id/view_expense_image1"
+        android:layout_alignBaseline="@id/view_expense_text1"
+        />
+    
+     <TextView
+        android:id="@+id/view_expense_text2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/view_expense_text1"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@id/view_expense_edit1"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="@android:drawable/ic_menu_edit" />
+    
+    <EditText 
+        android:id="@+id/view_expense_edit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:hint="Note"
+        android:focusable="false"
+        android:layout_toRightOf="@id/view_expense_image1"
+        android:layout_alignBaseline="@id/view_expense_text2"
+        />
+    
+    <TextView
+        android:id="@+id/view_expense_text3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/view_expense_text2"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@id/view_expense_edit1"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="@drawable/with" />
+    
+    <EditText 
+        android:id="@+id/view_expense_edit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:hint="With"
+        android:focusable="false"
+        android:layout_toRightOf="@id/view_expense_image1"
+        android:layout_alignBaseline="@id/view_expense_text3"
+        />
+    
+    <TextView 
+        android:id="@+id/view_expense_text4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Date"
+        android:textSize="20sp"
+        android:layout_below="@id/view_expense_text3"
+        android:layout_marginTop="23dp"        
+        />
+    
+    
+    <TextView 
+        android:id="@+id/view_expense_text5"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="select"
+        android:textSize="20sp"
+        android:layout_below="@id/view_expense_text4"
+        android:layout_marginTop="23dp"        
+        />
+    
+
+    
+  
+</RelativeLayout>
